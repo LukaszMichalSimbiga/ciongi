@@ -1,0 +1,16 @@
+<!DOCTYPE html>>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Projekt strony internetowej-Łukasz Michał Simbiga</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href="{{ url_for('instrukcja') }}">Instukcja obsługi, wzory i inne informacje.</a></li>
+            <li><a href="{{ url_for('artmetyczny') }}">Kalkulator dla ciągów artmetycznych.</a></li>
+            <li><a href="{{ url_for('geometryczny') }}">Kalkulator dla ciągów geometrycznych.</a></li>
+        </ul>
+        {% block content %}
+        {%endblock%}
+    </body>
+</html>
